@@ -1,0 +1,92 @@
+#container{
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;   /* по центру для блочных структур */
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+}
+body{
+    background: #ffffff;
+}
+header{
+    background:#2779a7;}
+#logo{
+    justify-self: center;
+}
+#logo>img{
+    width: 150px;
+    height: 150px;
+    transition: 0.6s linear;
+}
+#logo>img:hover{
+    box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transform: scale(0.99);
+    cursor: pointer;
+
+}
+#vector{
+    height: 1px;
+    width: 30vw;
+    margin: auto;
+    background: linear-gradient(to top, #000000, #2779a7); 
+}
+
+main{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background: linear-gradient(to top, #000000, #2779a7);
+}
+#buterbrod-button{
+    display: flex;
+    align-items:flex-end;
+    justify-content: end;
+    margin: 150px;
+}
+#buterbrod{
+    width: 70px;
+    max-width: 70px;
+    
+    height: 70px;
+    max-height: 70px;
+    
+    background: #000;
+    border-radius: 50%;
+    position: sticky;
+    transition: 0.5s linear;
+
+}
+#buterbrod>div{
+    background: #fff;
+    width: 1px;
+    height: 24px;
+    margin: auto;
+    transform: rotate(90deg);
+    transition: 0.5s linear;
+}
+#buterbrod:hover{
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transform: rotate(90deg);
+    div{
+        transform: rotate(0deg);
+        width: 2px;
+    }
+}
+
+
+#title{
+    display: flex;
+    color: #fff;
+    margin: auto;
+    justify-self: center;
+    
+}
+#title>h2{
+    text-align: center; 
+    font-size: 40px;
+}
